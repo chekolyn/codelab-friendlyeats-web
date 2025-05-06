@@ -42,10 +42,6 @@ export async function addReviewToRestaurant(db, restaurantId, review) {
 }
 
 function applyQueryFilters(q, { category, city, price, sort }) {
-  return;
-}
-
-function applyQueryFilters(q, { category, city, price, sort }) {
   if (category) {
     q = query(q, where("category", "==", category));
   }
